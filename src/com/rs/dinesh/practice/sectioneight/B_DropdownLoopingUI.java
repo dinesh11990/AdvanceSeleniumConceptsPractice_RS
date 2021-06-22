@@ -37,6 +37,13 @@ public class B_DropdownLoopingUI {
 			driver.findElement(By.id("hrefIncAdt")).click();
 		}
 			driver.findElement(By.id("btnclosepaxoption")).click();
+			
+			//Use assertEquals in order to check whether you have 5 Adults or not
+			//Don't need to wait until console output, just put asserion and verify
+			//In the loop if you give 4 , the test will fail	
+			
+			//Assert.assertEquals(driver.findElement(By.id("divpaxinfo")).getText(), "5 Adult");
+			
 			System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 	}
 
